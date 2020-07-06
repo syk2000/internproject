@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <style>
+        .log01{
+            text-align: right;
+            font-size: 9px;
+        }
+        .find_id{
+            margin: 7%;
+            margin-left: 40%;
+        }
+        a{
+            text-decoration:none;
+        }
+        .find{
+            font-size: 13px;
+            text-align: center;
+        }
+        .tx{
+            margin-top: 9%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="log01">
+        <a href="first_page.html">로그인</a>
+    </div>
+    <hr>
+    <div class="find">
+        <a href="find_id.html">아이디 찾기&nbsp;&nbsp;&nbsp;</a>
+        <a href="find_pw.html">비밀번호 찾기</a>
+    </div>
+    <hr>
+    <div class="tx">
+        <h2>ID 찾기</h2>
+    </div>
+    <div class="find_id">
+       이름: <input type="text" class="name_input"><br><br>
+       핸드폰: <input type="text" class="phone_input">&nbsp;&nbsp;&nbsp;<input type="button" value="인증번호" onclick="alert(123456);">
+        <!--새창 띄우기 버튼 우선은 네이버로 설정을 해주었다.-->
+        <br><br><input type="text" placeholder="인증번호 6자리 입력">
+        <br><br>
+        <input type="button" value="확인" onclick="location.href='first_page.html'">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <style>
+       /* img{
+            margin-left: 50%;
+            margin-top: 25%;
+        }*/
+         a{/*텍스트에 밑줄을 강제로 없애 보기 깔끔하게 하였다.*/ 
+            text-decoration:none;
+            font-size: 10px;/*font는 px로 글자 크기가 정해진다. text size는 dp로 글자 크기가 정해진다.*/
+        }
+        .login{
+            margin-top: 20%;
+            text-align: center
+        }
+        .log{
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <!--<img src="logo.PNG" width="150dp" height="100dp"><br><br>-->
+    <form class="login">
+        <img src="logo.PNG" width="150dp" height="100dp"><br><br>
+        ID : <input type="text" class="id_input" placeholder="아이디를 입력하세요~!!!"><br><br>
+        Pw : <input type="password" class="pw_input" placeholder="비밀번호를 입력하세요~!!!"><br>
+        <a href="find_id.html">아이디 찾기 /</a>
+        <a href="find_pw.html">비밀번호 찾기 /</a>
+        <a href="newmember.html">회원가입</a><br>
+        <!--버튼을 누르면 다른 웹페이지로 넘어가게 해주는 역할을 한다.-->
+        <input type="button" class="log" value="로그인" onclick="location.href='main_page.html'">
+    </form>
+
+    
+    
+</body>
+</html>
+
+
