@@ -1,25 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <style>
+        .back {
+            background-color: darkgray;
+        }
+
+        .back_h {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;/*밑줄 제거*/
+        }
+
+        .mv_st {
+            text-decoration-color: antiquewhite;
+            margin-left: 35%;
+            margin-bottom: 5%;
+        }
+
+        .next {
+            float: left;
+            margin-right: 3%;
+        }
+        #mv01{
+            text-align: center;
+        }
+        #mv02{
+            text-align: center;
+        }
+        .mv01{
+            text-align: center;
+            height: 200px;
+            width: 500px;
+            margin-left: 30%;
+        }
+        .mv02{
+            text-align: center;
+            height: 200px;
+            width: 300px;
+            margin-left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class="back_h"><!--메인화면으로 되돌아가기-->
+            <a href="main_page.html"><img src="logo.PNG" width="35dp" height="25dp"></a>
+        </div>
+    </div>
+    <div id="mv_st" class="mv_st"><!--영화관 페이지 타이틀 역할-->
+        <div class="next">
+            <a href="movie.html"><img src="pop.jpg" width="125dp" height="125dp"></a>
+        </div><br><br>
+        <a href="movie.html">
+            <h1>영화관 모음 사이트</h1>
+        </a>
+    </div>
+    <hr>
+    <!--동적인 화면을 만들예정-->
+    <h3>각각의 영화관의 이미지가 순차적으로 돌아가게 만들 예정이며 만약 이미지 클릭하면 해당 화면으로 이동할 예정</h3>
+    <hr>
+    <div id="tool">
+        <h3>영화관 역사</h3>
+        <h3>사라진 영화관</h3>
+        <h3>단극장 영화관</h3>
+        <h3>멀티 영화관</h3>
+    </div>
+    <hr>
+    <div id="mv01">
+        <h2>영화관 사이트(멀티 영화관)</h2>
+        <table class="mv01">
+            <tr>
+                <td><a href="http://www.cgv.co.kr/"><img src="movie_logo/cgv.PNG" width="175dp" height="100dp"></a></td>
+                <td><a href="https://www.megabox.co.kr/"><img src="movie_logo/mega.PNG" width="100dp" height="100dp"></a></td>
+                <td><a href="https://www.lottecinema.co.kr/NLCHS"><img src="movie_logo/lotte.PNG" width="100dp" height="100dp"></a></td>
+            </tr>
+            
+            <tr>
+                <td><a href="http://www.cgv.co.kr/"><h4>메가박스</h4></a></td>
+                <td><a href="https://www.megabox.co.kr/"><h4>메가박스</h4></a></td>
+                <td><a href="https://www.lottecinema.co.kr/NLCHS"><h4>롯데시네마</h4></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="mv02">
+        <h2>영화관 사이트(단극장 영화관)</h2>
+        <table class="mv02">
+            <tr>
+                <td><a href="http://www.seoulcinema.com/main/index.php"><img src="movie_logo/seoul.PNG" width="100dp" height="100dp"></a></td>
+                <td></td>
+                <td><a href="https://www.ntok.go.kr/kr/Main/Index"><img src="movie_logo/national.PNG" width="125dp" height="100dp"></a></td>
+            </tr>
+            
+            <tr>
+                <td><a href="http://www.seoulcinema.com/main/index.php"><h4>서울극장</h4></a></td>
+                <td></td>
+                <td><a href="https://www.ntok.go.kr/kr/Main/Index"><h4>국립극장</h4></a></td>
+            </tr>
+        <h4>단성사</h4>
+        <!--https://map.naver.com/v5/entry/place/1259357646?c=14136274.0431770,4518993.1486054,15,0,0,0,dh-->
+        <!--영화관 역사로 새롭게 탈바꿈 하였고 다른 단극장 영화관들은 다 문을 닫은 것을 확인할 수가 있다.-->
+        <hr>
+        </table>
+    </div>
 </body>
-    <hr>
-    <h2>영화관 사이트(멀티 영화관)</h2>
-    <h4>CGV</h4><!--http://www.cgv.co.kr/-->
-    <h4>메가박스</h4><!--https://www.megabox.co.kr/-->
-    <h4>롯데시네마</h4><!--https://www.lottecinema.co.kr/NLCHS-->
-    <hr>
-    <h2>영화관 사이트(단극장 영화관)</h2>
-    <h4>단성사</h4><!---->
-    <h4>대영시네마</h4><!---->
-    <h4>부산극장</h4><!---->
-    <h4>서울극장</h4><!---->
-    <h4>중앙극장</h4><!---->
-    <h4>명보극장</h4><!---->
-    <hr>
-    
+
 
 </html>

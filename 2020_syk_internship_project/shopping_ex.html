@@ -18,26 +18,12 @@
 
         a {
             text-decoration: none;
-            text-decoration-color: none;
         }
 
-        #tt {
-            margin-top: 3%;
+        .tt {
             margin-left: 35%;
-            /*쇼핑몰 모음사이트와 이름을 같이 놔두었다.*/
         }
 
-        .left {
-            float: left;
-            margin-right: 2%;
-        }
-
-        .left01 {
-            float: clear;
-        }
-
-
-        /*이 밑에서 부터는 탭키를 이용한 화면 출력이다. 하지만 자바스크립트를 사용하지 않고 html과 css만을 이용해 나타낸 것이므로 영화에서는 자바스크립트를 이용할 계획*/
         * {
             margin: 0;
             padding: 0;
@@ -45,7 +31,6 @@
         }
 
         .tab_content {
-            margin-top: 15%;
             text-align: center;
             font-size: 0;
         }
@@ -96,30 +81,27 @@
             display: block;
         }
 
-        /*테이블들 가운데 정렬을 해준 것이다.*/
         .mk01 {
             text-align: center;
             margin-left: 35%;
             margin-top: 7%;
-            height: 150px;
         }
 
         .mk02 {
             text-align: center;
             margin-left: 35%;
             margin-top: 7%;
-            width: 500px;
-            height: 150px;
         }
 
         .mk03 {
             text-align: center;
             margin-left: 35%;
             margin-top: 7%;
-            width: 500px;
-            height: 150px;
         }
     </style>
+    <!--<script type="text/javascript">
+        Function       자바 스크립트 이용하기 위해 잠시 보류 클릭시 밑에 화면만 바뀌게 적용할 예정                                                      
+    </script>  -->
 </head>
 
 <body>
@@ -131,21 +113,17 @@
             </div>
         </div>
         <hr>
-        <div id="tt">
+        <div class="tt">
             <!--shopping의 메인화면을 제공해주는 역할을 한다.-->
             <div class="left">
                 <a href="shopping.html"><img src="store.png" width="125dp" height="125dp"></a>
             </div>
-            <div class="left01">
-                <br><br>
-                <a href="shopping.html">
-                    <h2>쇼핑몰 모음</h2>
-                </a>
-            </div>
+            <a href="shopping.html">
+                <h2>쇼핑몰 모음</h2>
+            </a>
         </div>
-        <br><br><br><br><br><br><br>
         <hr>
-        <h2>반응형 으로 오픈, 종합, 전문 로고가 순차적으로 돌아가게 설정을 해놓는다. 만약 그림을 클릭하면 해당 페이지로 넘어가게 하도록 한다.</h2>
+        <!--반응형 으로 오픈, 종합, 전문 로고가 순차적으로 돌아가게 설정을 해놓는다. 만약 그림을 클릭하면 해당 페이지로 넘어가게 하도록 한다.-->
         <hr>
         <div class="tab_content">
 
@@ -168,9 +146,7 @@
                             <td><a href="https://www.gmarket.co.kr/"><img src="shop_logo/open/g-mk.PNG" width="100dp" height="100dp"></a>
                                 <!--G마켓-->
                             </td>
-
                             <td> <a href="http://www.auction.co.kr/?BCODE=BN00151604&ck=&sn=&igaw_eng=&airbridge_referrer=&appgate_guid="><img src="shop_logo/open/auction.PNG" width="100dp" height="100dp"></a></td>
-
                             <td> <a href="https://www.11st.co.kr/html/main.html?utm_term=&utm_campaign=%C6%F7%C5%D0%C1%A6%C8%DE%3E%C1%DC%B8%F4%B8%ED%3E%B0%CB%BB%F6%B9%D9%B7%CE%B0%A1%B1%E2&utm_source=%C1%DC%C0%CE%C5%CD%B3%DD_PC_P&utm_medium=%C6%F7%C5%D0+%C1%A6%C8%DE"><img src="shop_logo/open/11.PNG" width="100dp" height="100dp"></a></td>
                         </tr>
 
@@ -179,11 +155,9 @@
                             <td><a href="https://www.gmarket.co.kr/">
                                     <h3>G마켓</h3>
                                 </a></td>
-
                             <td><a href="http://www.auction.co.kr/?BCODE=BN00151604&ck=&sn=&igaw_eng=&airbridge_referrer=&appgate_guid=">
                                     <h3>옥션</h3>
                                 </a></td>
-
                             <td><a href="https://www.11st.co.kr/html/main.html?utm_term=&utm_campaign=%C6%F7%C5%D0%C1%A6%C8%DE%3E%C1%DC%B8%F4%B8%ED%3E%B0%CB%BB%F6%B9%D9%B7%CE%B0%A1%B1%E2&utm_source=%C1%DC%C0%CE%C5%CD%B3%DD_PC_P&utm_medium=%C6%F7%C5%D0+%C1%A6%C8%DE">
                                     <h3>11번가</h3>
                                 </a></td>
@@ -192,12 +166,9 @@
                         <tr>
                             <!--이미지 4~6-->
                             <td><a href="https://www.tmon.co.kr/"><img src="shop_logo/open/tmon.PNG" width="100dp" height="100dp"></a></td>
-
                             <td><a href="https://front.wemakeprice.com/main"><img src="shop_logo/open/wee.PNG" width="100dp" height="100dp"></a></td>
-
                             <td><a href="http://www.interpark.com/malls/index.html?gateTp=1"><img src="shop_logo/open/inter.PNG" width="100dp" height="100dp"></a></td>
                         </tr>
-
                         <tr>
                             <!--글자 4~6-->
                             <td><a href="https://www.tmon.co.kr/">
@@ -310,7 +281,6 @@
             </div>
 
         </div>
-
     </div>
 </body>
 

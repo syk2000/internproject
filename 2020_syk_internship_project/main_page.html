@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <style>
-        test{
-            margin: 50px;
+        
+        .maintain{
+            height: auto;
         }
-        .search_bar{
+
+        .search_bar {
             margin-left: 27%;
             font-size: 11px;
-            
         }
-        btn{
+
+        btn {
             margin-left: 50dp;
         }
-        a{/*텍스트에 밑줄을 강제로 없애 보기 깔끔하게 하였다.*/ 
-            text-decoration:none 
+        a {
+            /*텍스트에 밑줄을 강제로 없애 보기 깔끔하게 하였다.*/
+            text-decoration: none
         }
-        #cat{
+        .cat {
             /*카테고리를 가운데 정렬을 해줌으로 인해 보기 편하게 설정을 하였다.*/
             vertical-align: middle;
             text-align: center;
+            border-bottom-width: thin;
         }
-        .log{
+        .log {
             border-radius: 3px;
             border-radius: 35%;
         }
     </style>
 </head>
+
 <body>
-    <div class="search_bar"><!--검색창 만들기-->
+    <div class="maintain">
+        <div class="search_bar">
+            <!--검색창 만들기-->
+            <br>
+            <a href="main_page.html"><img src="logo.PNG" width="125dp" height="75dp"></a>
+            &nbsp;&nbsp;&nbsp;
+            <input type="text" style="WIDTH: 150pt; HEIGHT: 17pt" id="test">
+            <input type="button" id="btn" value="찾기">
+        </div>
         <br>
-        <img src="logo.PNG" width="125dp" height="75dp">
-        &nbsp;&nbsp;&nbsp;
-        <input type="text"style="WIDTH: 150pt; HEIGHT: 17pt" id="test">
-        <input type="button" id="btn" value="찾기">
-    </div>
-    <br>
-    <br>
-    <hr>
-    <div style="background-color: azure" id="cat">
-        <a href="movie.html">영화&nbsp;&nbsp;</a>
-        <a href="shopping.html">쇼핑&nbsp;&nbsp;</a>
-        <a href="https://www.naver.com/">네이버&nbsp;&nbsp;</a>
-        <a href="https://www.youtube.com/">유튜브&nbsp;&nbsp;</a>
-        <a href="https://www.daum.net/">다음&nbsp;&nbsp;</a>
-        <a href="https://www.google.co.kr/">구글&nbsp;&nbsp;</a>
-    </div>
-    <hr>
-    <br>
-    <div class="log" align="right">
-        <input type="button"style="WIDTH: 175pt; HEIGHT: 65pt" value="로그인하기" onclick="location.href='first_page.html'">
+        <br>
+
+        <div style="background-color: azure" class="cat">
+            <a href="movie.html">영화&nbsp;&nbsp;</a>
+            <a href="shopping.html">쇼핑&nbsp;&nbsp;</a>
+            <a href="https://www.naver.com/">네이버&nbsp;&nbsp;</a>
+            <a href="https://www.youtube.com/">유튜브&nbsp;&nbsp;</a>
+            <a href="https://www.daum.net/">다음&nbsp;&nbsp;</a>
+            <a href="https://www.google.co.kr/">구글&nbsp;&nbsp;</a>
+        </div>
+
+        <br>
+        <div class="log" align="right">
+            <input type="button" style="WIDTH: 175pt; HEIGHT: 65pt" value="로그인하기" onclick="location.href='first_page.html'">
+        </div>
     </div>
 </body>
 </html>
