@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        
+        body{            
+            padding: 25px;
+        }
+        table{
+            text-align: right;
+            padding: 15px;
+            margin: auto;
+        }
+        .fs-1{
+            text-align: center;
+        }        
+    </style>
+<script>
+window.onfocus=function(){
+}
+window.onload=function(){
+ window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+window.moveTo(0,0); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+window.resizeTo(650px,450px); // 웹페이지의 크기를 가로 1280 , 세로 800 으로 고정(확장 및 축소)
+window.scrollTo(0,250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
+}
+    </script>
+</head>
+<body>
+    <div style = "width:500px" align="center">
+    </div>
+    
+    <fieldset class="fs-1">
+    <h2>회원 가입</h2>
+<form name="new" action="/finaltest.html" method="get" >
+    <table>
+            <br/> 
+        <tr>
+            <td>성명 : </td>
+            <td><input type="text" name="user-name"></td>
+        </tr>
+        <tr>
+            <td>아이디 입력 : </td>
+            <td><input type="text" name="ID"></td>
+            <td><input type="button" name="check" value="중복확인"></td>
+        </tr>
+       <tr>
+            <td>비밀번호 입력 : </td>
+            <td><input type="password" name="PW"></td>
+        </tr>
+       <tr>
+            <td>비밀번호 확인 : </td>
+            <td><input type="password" name="PW-check"></td>
+        </tr>
+        <tr>
+            <td>핸드폰번호 입력 : </td>
+            <td><input type="text" name="Phone"></td>
+            <td><input type="button" name="phone-check" value="번호확인"></td>
+        </tr>
+    </table>
+    </form>
+        <br /><br />
+        
+        <input type="button" name="new" value="확인">
+        </fieldset>
+        
+</body>
+</html>
